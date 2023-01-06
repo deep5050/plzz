@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./plzz/file_operations",
+        "./plzz/helper_functions"
+    ],
+    "python.formatting.provider": "black",
+    "python.analysis.typeCheckingMode": "off"
+}
