@@ -1,0 +1,47 @@
+when you are the Chief Information Officer (CIO), your systems need to just work. A quiet day when users go about their job without interruption is a celebration. When they do notice, something has probably fallen apart.
+
+We understand. CIOs own some of an organization's most mission-critical challenges. your security counterparts expect safety to be robust while your users want it to be unintrusive. Your sales team continues to open offices in new locations while those new hires need rapid connectivity to your applications. You own a budget that never seems to grow fast enough to match price increases from point solution vendors. On top of that, CIOs must support their organizations' shifts to new remote and hybrid work models, which means modernizing applications and infrastructure faster than ever before.
+
+Today marks the start of CIO Week, our celebration of the work that you and your teams accomplish every day. We’ve assembled this week to showcase features, stories, and tools that you can use to continue to deliver on your mission while also improving the experience of your users and administrators. We’ve even included announcements to help on the budget front.
+
+we’re doing this because we’ve been in the same places? Our own security team could not compromise on tools to safeguard Cloudflare while we grew beyond the walls of a couple of locations. We hired new staff members around the globe to manage one of the world’s largest networks, and they needed access to be fast. We were also predominantly a work-from-office organization. Today, we're hiring for in-office, remote and hybrid opportunities all over the world.
+
+We believe CIOs are shaping the future of the modern organization. From securely connecting employees and third-parties to critical applications, to safeguarding sensitive company data from phishing and other malicious threats, CIOs are effectively tasked with protecting an organization’s crown jewels. This week we’ll demonstrate how Cloudflare is helping CIOs to accelerate digital transformation and maximize employee collaboration and productivity – all while strengthening security. Welcome to CIO Week.
+
+All eyes on digital transformation
+CIOs own, sponsor, or support an organization's digital transformation strategy that touches all parts of a business. These cross-functional efforts can include moving applications and data to the cloud, building new competencies in areas like data analytics or automation, and developing new digital products and services to drive growth.
+
+While these initiatives are largely driven by the motivation to go faster, CIOs recognize that speed cannot come at the expense of safety. Balancing both goals, however, can quickly become complicated. Layering on new technologies can add overhead and increase total cost of ownership. Administrators can struggle if products require different management interfaces and control planes or work differently in different locations. Plus, poor integrations and interoperability can mean precious time is wasted just getting services to work together.
+
+We think about hidden challenges like these often when building new products at Cloudflare. As Cloudflare’s CIO, who you’ll hear from shortly, likes to phrase it, we’re helping CIOs by “bringing the glue”. That is, when building anything new, we ask ourselves to focus on delivering benefits that could not be obtained using individual products in silos. Throughout this innovation week, you’ll see announcements highlighting how organizations can realize more value when services work natively together.
+
+Designing our security products to be composable and easy to use helps our customers speed up their digital strategy.  But we think about speed in other ways too. First, we optimize our services to enforce protections for any request, from anywhere around the globe, so that security doesn’t get in the way of end users. (In fact, we’re so proud of this that we even dedicated an entire innovation week to delivering speedy user experiences across the Internet). Second, we pride ourselves on being speedy in innovation, delivering new capabilities and services at such high velocity that we not only solve the problems you’re facing today, but also help you proactively plan for fixing your problems of tomorrow.
+
+SASE, Zero Trust and the CIO
+For many organizations, an increasingly critical goal of digital transformation is revamping networking and security. As applications, users, and data have shifted outside the walls of the corporate perimeter, the traditional tools of the castle-and-moat model no longer make sense.
+
+Instead, modernized architectures like SASE (or Secure Access Service Edge) are gaining traction, advocating to unify all networking and security controls to a single control plane in the cloud. On that journey, we’re seeing organizations turning to Zero Trust for best practices and principles to enable the broader visibility and granular controls needed to steer the modern workforce.
+
+While concepts like SASE and Zero Trust still need the occasional explainer, the benefits are real, and CIOs are turning to our SASE platform – Cloudflare One – to start realizing those business benefits. When customers start their SASE and Zero Trust journeys with Cloudflare, they are connecting their employees to our global network to inspect and apply controls to as much traffic and data as they want. Whether your traffic is traversing from on-premise to the cloud, from one cloud to another, or something in between, Cloudflare has a way to secure and accelerate traffic.
+
+This week, we will be announcing even more capabilities and products that make the single-vendor SASE dream a reality.
+
+If you want to go far, let’s go together
+Before taking on any long-term digital transformation challenge, it’s vital to make sure you're surrounded by the right people and partners to go the distance.
+
+With our broad mission to help build a better Internet, it means that we must do the same at Cloudflare. We partner with fellow industry leaders to help CIOs with efforts like the Critical Infrastructure Defense Project to quickly improve the cyber readiness of vulnerable infrastructure or our partnership with Yubico to provide security keys at “Good for the Internet” pricing (for as low as $10 per key!).
+
+This collaborative ethos extends far beyond just these types of focused initiatives. Over recent years, Cloudflare has invested in our ecosystem of alliances, channel partners (including system integrators and advisory / consulting firms), and technology partners to make sure customers have options to pursue digital transformation in the way that makes the most sense for them. In particular, we have seen more customers and partners collaborating on long term SASE and Zero Trust use cases with our Cloudflare One platform.
+
+Over the course of this week, we’ll share more about strategic partnerships, including opportunities to enable a Zero Trust strategy using Cloudflare One platform services and deeper integrations with key partners like Microsoft.
+
+The expertise of partners combined with Cloudflare’s network scale and simplicity helps CIOs modernize security at their own pace.
+
+Cloudflare is the neutral supercloud control plane
+When CIOs think about a multi-cloud strategy it tends to center around applications. Multi-cloud strategies devise careful plans for migrating applications, ensuring that efficiency, scale and speed of delivery goals are met in the cloud.
+
+But often overlooked are the highways of connectivity that are essential for a speedy connection from one cloud to another or from an on-premise data center to another network in a cloud provider. While speeding up applications is the focus, having a global endpoint and identity-neutral network fabric for consistency and composability is equally important.
+
+This week, we’ll highlight how Cloudflare is able to connect you to/from anything. Whether a request is coming to or from other cloud providers, IoT devices, or in challenging regions or areas, Cloudflare provides a global control plane to help your business stay secure and keep things moving fast.
+
+We believe that Cloudflare is the neutral supercloud control plane. Over the course of this week, we’ll show you how our platform is built to work seamlessly with multiple cloud providers, allowing organizations to easily and securely manage their cloud infrastructure.
