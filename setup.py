@@ -38,7 +38,7 @@ setup(
     install_requires=read('requirements.txt').splitlines(),
     entry_points={
         "console_scripts": [
-            "plzz = plzz.__main__:main",
+            "plzz = plzz.__main__:__main__",
         ]
     },
     classifiers=[

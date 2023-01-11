@@ -3,7 +3,8 @@ import os
 import ast
 from pathlib import Path
 
-from plzz.helper_functions.commands_database import commands
+from plzz.helper_functions.commands_database import functions, commands, commands_map
+
 # ANSI colors
 class Colors(object):
     def __init__(self) -> None:
@@ -19,49 +20,73 @@ class Colors(object):
 
 colors = Colors()
 
+function_database = "data/functions.json"
+command_mapping = "data/commands_mapping.json"
 
-home = str(Path.home())
-
-
-
-functions_database = os.path.join(home,"functions.json")
-
-
-# group commands from functions.json file
-def __group_available_commands():
-    """
-    Group available commands by their type/dirname and return a dict.
-    """
+# run the function to generate commands_map.database
+def __make_commands_mapping():
+    
+    # get keys from commands.databse, get the the data against the key (function name)
+    # feed the function name into function.database
+    # group the result based on their doc strings
     commands_types = []
+    commands_map = []
 
-    data = ""
-    # with open(functions_database, "r") as f:
-    data = commands.database
-    for key in data:
-        # get the command type
-        command_type = data[key].split(":")[0].strip()
+    for _command in commands.database:
+        if _command.startswith("--"):
+            # Commands for plzz itself
+            continue
 
-        # list unique types of commands
-        if not command_type in commands_types:
-            commands_types.append(command_type)
+        tmp = {}
+        command_name = _command
+        function_name = commands.database[_command]
+        function_group = functions.database[function_name].split(":")[0]
+        function_doc = functions.database[function_name].split(":")[1]
 
-    # group commands
-    for types in commands_types:
-        command_type_str = str(types).replace("_", " ").upper()
-        print(
-            "{}{}{}:{}".format(
-                colors.BOLD, colors.OKGREEN, command_type_str, colors.ENDC
-            )
-        )
-        for command in data:
-            if types in data[command]:
-                print(
-                    "{}{}{} : {}".format(
-                        colors.OKBLUE, command.replace("_","-"), colors.ENDC, data[command].split(":")[1]
-                    )
-                )
+        tmp['command'] = command_name
+        tmp["function"] = function_name
+        tmp["doc"] = function_doc
+        tmp['category'] = function_group
+        
+        if function_group not in commands_types:
+            commands_types.append(function_group)
+        
+        commands_map.append(tmp)
+
+    with open(command_mapping,"w") as f:
+        json.dump(commands_map,f)
+
+    return commands_map
 
 
+def __group_available_commands():
+    """Group available commands by their type/dirname and return a dict.
+    """
+    command_types = []
+    
+    # get unique commands types
+    for command in commands_map.database:
+        if command['category'] not in command_types:
+            command_types.append(command['category'])
+        
+    for command_type in command_types:
+        print("\n{}{}{}{}".format(
+            colors.BOLD,
+            colors.OKBLUE,
+            command_type.replace("_", " ").upper(),
+            colors.ENDC
+        ))
+
+        for command_object in commands_map.database:
+            if command_object["category"] == command_type:
+                print("{}{}{}{} : {}".format(
+                    colors.BOLD,
+                    colors.OKGREEN,
+                    command_object['command'],
+                    colors.ENDC,
+                    command_object['doc']
+                ))
+ 
 
 def __list_all_commands():
     """
@@ -70,11 +95,17 @@ def __list_all_commands():
     __group_available_commands()
 
 
+
+# search commands
+def __search_commands(keyword:str):
+    pass
+
+
 # helper function to find commands from a given keyword
 # here we need a complete list of available function names
 def __search_command_by_keyword(keyword):
     """
-    Searches a JSON file for keys that contain a given keyword (where the keys are underscore-separated strings).
+    Searches a command by given keyword.
 
     Parameters:
     keyword (str): The keyword to search for.
@@ -82,34 +113,23 @@ def __search_command_by_keyword(keyword):
     Raises:
     FileNotFoundError: If the JSON file does not exist.
     """
-
-    # Validate the parameters
-    # if not os.path.isfile(functions_database):
-    #     raise FileNotFoundError(
-    #         f"The function database: {functions_database} does not exist."
-    #     )
-
-    # # Open the JSON file
-    # with open(functions_database, "r") as f:
-    #     # Load the file contents
-    #     data = json.load(f)
-    # commands.update()
-    data = commands.database
+    
+    data = commands_map.database
     # Iterate over the keys in the data
-    for key in data:
+    for command in data:
         # Split the key into parts
-        parts = key.split("_")
+        command_str_arr = command['command'].split("-")
 
         # Check if any of the parts match the keyword
-        if any(part == keyword for part in parts):
-            # exclude type of commands from the docstring (split with :)
+        if any(part == keyword for part in command_str_arr):
+            # exclude type of functions from the docstring (split with :)
             print(
                 "{}{}{}{} : {}".format(
                     colors.BOLD,
                     colors.OKBLUE,
-                    key,
+                    command['command'],
                     colors.ENDC,
-                    data[key].split(":")[1],
+                    command['doc'],
                 )
             )
 
@@ -214,6 +234,7 @@ def __extract_function_info(python_filename):
                     
                     # Add the function info (first line only) to the dictionary
                     function_info[name] = "{}:{}.".format(command_type,docstring.split(".")[0].strip())
+                    # print(name)
                 except:
                     function_info[name] = "{}:{}".format(command_type,'N/A')
     
@@ -222,6 +243,7 @@ def __extract_function_info(python_filename):
 
 ## to be used in development mode
 def __make_function_database(dirname):
+
     """ Extract all the function names from all the python files from a given directory
 
     """
@@ -236,6 +258,14 @@ def __make_function_database(dirname):
         function_dict = {**function_dict, **new_function_dict}
         # function_dict = function_dict | new_function_dict
 
-    with open(functions_database,'w') as f:
+    with open(function_database,'w') as f:
         json.dump(function_dict,f)
-    commands.update()
+
+
+def __populate_development_data():
+    __make_function_database("plzz")
+    print("1. update 'snippets/function.database' with the content in 'data/functions.json' now !")
+    print("2. update 'snippets/commands.database' with the content in '__main__.py' now !")
+    __make_commands_mapping()
+    print("3. update 'snippets/commands_map.database' with the content in 'data/commands_mapping.json' now !")
+    
