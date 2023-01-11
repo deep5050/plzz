@@ -44,6 +44,8 @@ from plzz.commands.folder_organizations.replace_word import replace_words_smartl
 # utilities
 from plzz.commands.utilities.bing_wallpapers import  download_bing_wallpaper
 
+# development
+from plzz.commands.development_tasks.upload_to_gist import upload_to_gist_smartly
 
 def __get_version():
 
@@ -88,7 +90,8 @@ def __main__():
             "delete-empty-files": delete_empty_text_files,
             "replace-words": replace_words_smartly,
             "count-word": count_word_smartly,
-            "download-todays-wallpaper": download_bing_wallpaper     
+            "download-todays-wallpaper": download_bing_wallpaper,
+            "upload-to-gist": upload_to_gist_smartly   
         }
     )
 

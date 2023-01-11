@@ -88,5 +88,11 @@
         "function": "download_bing_wallpaper",
         "doc": "Download today's wallpaper from bing, and save them.",
         "category": "utilities"
+    },
+    {
+        "command": "upload-to-gist",
+        "function": "upload_to_gist_smartly",
+        "doc": "Upload a file or all files under a directory to GIthub Gist.",
+        "category": "development_tasks"
     }
 ]
