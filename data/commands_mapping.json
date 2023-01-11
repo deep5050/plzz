@@ -1,0 +1,92 @@
+[
+    {
+        "command": "create-random-text-files",
+        "function": "create_random_text_files",
+        "doc": "Creates a specified number of random text files with random text under a given directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "create-lorem-ipsum-file",
+        "function": "create_lorem_ipsum_file",
+        "doc": "Creates a Lorem Ipsum file with a specified number of lines.",
+        "category": "file_operations"
+    },
+    {
+        "command": "generate-toc",
+        "function": "generate_TOC_smartly",
+        "doc": "Generate Table of contents from a given markdown file or all the markdown files under a directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "add-missing-extensions",
+        "function": "add_extensions_smartly",
+        "doc": "Add missing extension to a file or all the files under a directory.",
+        "category": "folder_organizations"
+    },
+    {
+        "command": "delete-duplicates",
+        "function": "delete_duplicate_files",
+        "doc": "Generates the MD5 hash of all the files in a given directory and deletes one of the files if two hashes match.",
+        "category": "folder_organizations"
+    },
+    {
+        "command": "rename-files",
+        "function": "rename_files_smartly",
+        "doc": "Rename a file/all files under directory by replacing specified character with new one.",
+        "category": "folder_organizations"
+    },
+    {
+        "command": "format-sentences",
+        "function": "format_sentences_smartly",
+        "doc": "Format each sentences correctly in a english text a file or all files under a directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "find-urls",
+        "function": "find_urls_smartly",
+        "doc": "Find all the links from a text file or all the text files under a directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "count-offensive-words",
+        "function": "detect_offensive_words_smartly",
+        "doc": "Count offensive words from a file or a directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "censor-offensive-words",
+        "function": "censor_offensive_words",
+        "doc": "Censor offensive words from a file or all files under a directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "check-hash",
+        "function": "check_hash_smartly",
+        "doc": "Encrypt a file (MD5) or all the files under a directory and print the key(s).",
+        "category": "file_operations"
+    },
+    {
+        "command": "delete-empty-files",
+        "function": "delete_empty_text_files",
+        "doc": "Delete all empty text files from src_dir.",
+        "category": "folder_organizations"
+    },
+    {
+        "command": "replace-words",
+        "function": "replace_words_smartly",
+        "doc": "Replace all the words in a given file or all the files under a directory with a new word.",
+        "category": "folder_organizations"
+    },
+    {
+        "command": "count-word",
+        "function": "count_word_smartly",
+        "doc": "Count number of words in a file or under all the files under a given directory.",
+        "category": "file_operations"
+    },
+    {
+        "command": "download-todays-wallpaper",
+        "function": "download_bing_wallpaper",
+        "doc": "Download today's wallpaper from bing, and save them.",
+        "category": "utilities"
+    }
+]
