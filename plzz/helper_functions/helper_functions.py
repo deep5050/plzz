@@ -134,24 +134,6 @@ def __search_command_by_keyword(keyword):
             )
 
 
-def __print_about():
-    """
-    Print formatted about section of the app.
-    """
-    print(
-        "{}{}PLZZ: A CLI to automate daily tasks.{}".format(
-            colors.BOLD, colors.OKGREEN, colors.ENDC
-        )
-    )
-    print("Version: {}".format("0.1"))
-    print("Author: Dipankar Pal, Copyright MIT 2023")
-    print("Github: https://github.com/deep5050/plzz")
-    print(
-        "Run with {}`plzz list_commands`{} to see all the available commands. ".format(
-            colors.OKCYAN, colors.ENDC
-        )
-    )
-
 
 def __check_upstream_version():
     """

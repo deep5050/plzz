@@ -19,7 +19,6 @@ from plzz.helper_functions.helper_functions import (
     colors,
     __list_all_commands,
     __search_command_by_keyword,
-    __print_about,
     __check_upstream_version,
      __populate_development_data,
 )
@@ -67,6 +66,24 @@ def __print_version():
         VERSION,
         colors.ENDC
     ))
+
+def __print_about():
+    """
+    Print formatted about section of the app.
+    """
+    print(
+        "{}{}PLZZ: A CLI to automate daily tasks.{}".format(
+            colors.BOLD, colors.OKGREEN, colors.ENDC
+        )
+    )
+    print("Version: {}".format(VERSION))
+    print("Author: Dipankar Pal, Copyright MIT 2023")
+    print("Github: https://github.com/deep5050/plzz")
+    print(
+        "Run with {}`plzz list_commands`{} to see all the available commands. ".format(
+            colors.OKCYAN, colors.ENDC
+        )
+    )
 
 def __main__():
     fire.Fire(
