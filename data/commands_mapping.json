@@ -92,7 +92,13 @@
     {
         "command": "upload-to-gist",
         "function": "upload_to_gist_smartly",
-        "doc": "Upload a file or all files under a directory to GIthub Gist.",
+        "doc": "Upload a file or all files under a directory to Github Gist.",
         "category": "development_tasks"
+    },
+    {
+        "command": "generate-password",
+        "function": "generate_password_smartly",
+        "doc": "Generate a password of a given strength (low,medium,strong) or any specific length.",
+        "category": "utilities"
     }
 ]

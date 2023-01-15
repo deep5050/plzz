@@ -2,7 +2,8 @@
 class Functions(object):
     def __init__(self) -> None:
         self.database = {
-            "upload_to_gist_smartly": "development_tasks:Upload a file or all files under a directory to GIthub Gist.",
+            "format_functions_smartly": "development_tasks:Format all the function definitions with selected style (pascal/snakecase,kebabcase/camelcase).",
+            "upload_to_gist_smartly": "development_tasks:Upload a file or all files under a directory to Github Gist.",
             "check_hash_smartly": "file_operations:Encrypt a file (MD5) or all the files under a directory and print the key(s).",
             "count_word_smartly": "file_operations:Count number of words in a file or under all the files under a given directory.",
             "create_random_text_files": "file_operations:Creates a specified number of random text files with random text under a given directory.",
@@ -18,6 +19,7 @@ class Functions(object):
             "rename_files_smartly": "folder_organizations:Rename a file/all files under directory by replacing specified character with new one.",
             "replace_words_smartly": "folder_organizations:Replace all the words in a given file or all the files under a directory with a new word.",
             "download_bing_wallpaper": "utilities:Download today's wallpaper from bing, and save them.",
+            "generate_password_smartly": "utilities:Generate a password of a given strength (low,medium,strong) or any specific length."
         }
 
 
@@ -49,6 +51,8 @@ class Commands(object):
             "count-word": "count_word_smartly",
             "download-todays-wallpaper": "download_bing_wallpaper",
             "upload-to-gist": "upload_to_gist_smartly",
+            # "format-function-names": 'format_functions_smartly',
+            "generate-password": "generate_password_smartly"
         }
 
 
@@ -149,11 +153,16 @@ class Commands_map(object):
     {
         "command": "upload-to-gist",
         "function": "upload_to_gist_smartly",
-        "doc": "Upload a file or all files under a directory to GIthub Gist.",
+        "doc": "Upload a file or all files under a directory to Github Gist.",
         "category": "development_tasks"
+    },
+    {
+        "command": "generate-password",
+        "function": "generate_password_smartly",
+        "doc": "Generate a password of a given strength (low,medium,strong) or any specific length.",
+        "category": "utilities"
     }
 ]
-
 
 functions = Functions()
 commands = Commands()

@@ -43,9 +43,11 @@ from plzz.commands.folder_organizations.replace_word import replace_words_smartl
 
 # utilities
 from plzz.commands.utilities.bing_wallpapers import  download_bing_wallpaper
+from plzz.commands.utilities.generate_password import generate_password_smartly
 
 # development
 from plzz.commands.development_tasks.upload_to_gist import upload_to_gist_smartly
+from plzz.commands.development_tasks.rename_functions import format_functions_smartly
 
 def __get_version():
 
@@ -91,7 +93,9 @@ def __main__():
             "replace-words": replace_words_smartly,
             "count-word": count_word_smartly,
             "download-todays-wallpaper": download_bing_wallpaper,
-            "upload-to-gist": upload_to_gist_smartly   
+            "upload-to-gist": upload_to_gist_smartly,
+            # "format-function-names": format_functions_smartly,
+            "generate-password": generate_password_smartly
         }
     )
 
