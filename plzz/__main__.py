@@ -43,6 +43,7 @@ from plzz.commands.folder_organizations.replace_word import replace_words_smartl
 # utilities
 from plzz.commands.utilities.bing_wallpapers import  download_bing_wallpaper
 from plzz.commands.utilities.generate_password import generate_password_smartly
+from plzz.commands.utilities.qrcode import create_qr_code
 
 # development
 from plzz.commands.development_tasks.upload_to_gist import upload_to_gist_smartly
@@ -112,7 +113,9 @@ def __main__():
             "download-todays-wallpaper": download_bing_wallpaper,
             "upload-to-gist": upload_to_gist_smartly,
             # "format-function-names": format_functions_smartly,
-            "generate-password": generate_password_smartly
+            "generate-password": generate_password_smartly,
+            # "check-password-strength": check_password_strength,
+            "create-qr-code": create_qr_code
         }
     )
 
