@@ -100,5 +100,17 @@
         "function": "generate_password_smartly",
         "doc": "Generate a password of a given strength (low,medium,strong) or any specific length.",
         "category": "utilities"
+    },
+    {
+        "command": "create-qr-code",
+        "function": "create_qr_code",
+        "doc": "Create qr code and save it as a image.",
+        "category": "utilities"
+    },
+    {
+        "command": "add-license",
+        "function": "add_license_smartly",
+        "doc": "Create a license file of desired type.",
+        "category": "development_tasks"
     }
 ]

@@ -48,6 +48,7 @@ from plzz.commands.utilities.qrcode import create_qr_code
 # development
 from plzz.commands.development_tasks.upload_to_gist import upload_to_gist_smartly
 from plzz.commands.development_tasks.rename_functions import format_functions_smartly
+from plzz.commands.development_tasks.licenses import add_license_smartly
 
 def __get_version():
 
@@ -115,7 +116,8 @@ def __main__():
             # "format-function-names": format_functions_smartly,
             "generate-password": generate_password_smartly,
             # "check-password-strength": check_password_strength,
-            "create-qr-code": create_qr_code
+            "create-qr-code": create_qr_code,
+            "add-license": add_license_smartly
         }
     )
 
