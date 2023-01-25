@@ -5,6 +5,16 @@ import re
 
 from plzz.helper_functions.helper_functions import colors
 
+
+# import pwgen
+
+def __version2(length=12, num=1, symbols=True, capitalize=True):
+    return pwgen.pwgen(length=length, count=num, symbols=symbols, capitalize=capitalize)
+
+# length = int(input("Enter the desired length of the password: "))
+# password = suggest_password(length)
+# print("Suggested password:", password)
+
 def __has_english_characters(string):
     english_characters = re.compile(r'[a-zA-Z]')
     return bool(english_characters.search(string))
