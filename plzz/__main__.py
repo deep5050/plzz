@@ -33,12 +33,15 @@ from plzz.commands.file_operations.check_hash import check_hash_smartly
 from plzz.commands.file_operations.offensive_words import detect_offensive_words_smartly, censor_offensive_words
 from plzz.commands.file_operations.find_urls import find_urls_smartly
 from plzz.commands.file_operations.format_sentences import format_sentences_smartly
+
+
 # folder organizations
 from plzz.commands.folder_organizations.add_extension import add_extensions_smartly
 from plzz.commands.folder_organizations.delete_duplicates import delete_duplicate_files
 from plzz.commands.folder_organizations.rename_files import rename_files_smartly
 from plzz.commands.folder_organizations.delete_empty_files import delete_empty_text_files
 from plzz.commands.folder_organizations.replace_word import replace_words_smartly
+
 
 # utilities
 from plzz.commands.utilities.bing_wallpapers import  download_bing_wallpaper
@@ -50,6 +53,8 @@ from plzz.commands.utilities.extract_codeblocks_markdown import extract_code_blo
 from plzz.commands.development_tasks.upload_to_gist import upload_to_gist_smartly
 from plzz.commands.development_tasks.rename_functions import format_functions_smartly
 from plzz.commands.development_tasks.licenses import add_license_smartly
+from plzz.commands.development_tasks.minify_json import minify_json_files
+
 
 def __get_version():
 
@@ -119,7 +124,8 @@ def __main__():
             # "check-password-strength": check_password_strength,
             "create-qr-code": create_qr_code,
             "add-license": add_license_smartly,
-            "extract-code-blocks": extract_code_blocks
+            "extract-code-blocks": extract_code_blocks,
+            "minify-json": minify_json_files
         }
     )
 
