@@ -100,8 +100,8 @@ def __main__():
             "--about": __print_about,
             "--version": __print_version,
             "--update": __check_upstream_version,
-            "--list-commands": __list_all_commands,
-            "--find-commands": __search_command_by_keyword,
+            "--list": __list_all_commands,
+            "--find": __search_command_by_keyword,
             # remove the below entry on deployment time 
             # "--develop": __populate_development_data,
             "create-random-text-files": create_random_text_files,
