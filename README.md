@@ -8,7 +8,7 @@
 </div>
 
 
-![About](about.svg.svg)
+![About](about.svg)
 
 # Install
 
