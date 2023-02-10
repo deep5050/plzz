@@ -1,0 +1,9 @@
+# VERSION 0.2
+
+1. First public release. Install with `pip3 install plzz-cli`
+2. Package name changed to `plzz-cli` from `plzz` due to pypi guidelines.
+3. Updated README. Added logo and other instruction related fields.
+
+# VERSION 0.1
+
+1. First initial internal release with handful of commands.

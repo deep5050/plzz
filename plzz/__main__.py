@@ -41,6 +41,7 @@ from plzz.commands.folder_organizations.delete_duplicates import delete_duplicat
 from plzz.commands.folder_organizations.rename_files import rename_files_smartly
 from plzz.commands.folder_organizations.delete_empty_files import delete_empty_text_files
 from plzz.commands.folder_organizations.replace_word import replace_words_smartly
+# from plzz.commands.folder_organizations.organize_audio_by_bits import move_audio_by_bitrate
 
 
 # utilities
@@ -88,7 +89,7 @@ def __print_about():
     print("Author: Dipankar Pal, Copyright MIT 2023")
     print("Github: https://github.com/deep5050/plzz")
     print(
-        "Run with {}`plzz list_commands`{} to see all the available commands. ".format(
+        "Run with {}`plzz --list-commands`{} to see all the available commands. ".format(
             colors.OKCYAN, colors.ENDC
         )
     )
@@ -102,7 +103,7 @@ def __main__():
             "--list-commands": __list_all_commands,
             "--find-commands": __search_command_by_keyword,
             # remove the below entry on deployment time 
-            "--develop": __populate_development_data,
+            # "--develop": __populate_development_data,
             "create-random-text-files": create_random_text_files,
             "create-lorem-ipsum-file": create_lorem_ipsum_file,
             "generate-toc": generate_TOC_smartly,
@@ -125,7 +126,8 @@ def __main__():
             "create-qr-code": create_qr_code,
             "add-license": add_license_smartly,
             "extract-code-blocks": extract_code_blocks,
-            "minify-json": minify_json_files
+            "minify-json": minify_json_files,
+            # "organize-audio-by-bitrate": move_audio_by_bitrate
         }
     )
 

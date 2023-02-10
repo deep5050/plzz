@@ -23,9 +23,9 @@ def required():
 
 
 setup(
-    name="plzz",
+    name="plzz-cli",
     version=VERSION,
-    description=DESCRIPTION,
+    description="A CLI to automate daily tasks of common and advanced users.",
     long_description=readme(),
     keywords="CLI automation file-operations file-organization tasks system-tools app",
     author="Dipankar Pal",
