@@ -25,6 +25,7 @@ Run the app with command **`plzz`**
 <!-- ![Install](install.svg.svg) -->
 
 
+
 # List of commands
 
 **`plzz --develop`** : Only for development purpose. Not intended to ship during publishing.
@@ -39,7 +40,9 @@ Run the app with command **`plzz`**
 
 **`plzz [OPERATION]`** : Run a operation from the supported list. Ex. `plzz create-random-text-files`
 
+# Suggest operations
 
+[Join this discussion](https://github.com/deep5050/plzz/discussions/4) to suugest your ideas and see future operations to be added!
 
 # Supported operations
 
