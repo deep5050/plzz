@@ -134,14 +134,6 @@ def __search_command_by_keyword(keyword):
             )
 
 
-
-def __check_upstream_version():
-    """
-    check and notify if a latest version is available.
-    """
-    pass
-
-
 def __find_python_files(directory):
     """
     Finds all the python files under a given directory.
