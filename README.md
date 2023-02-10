@@ -5,10 +5,11 @@
 
 <p align=center> A python CLI to automate daily tasks of both common and advanced users :) </p>
 
+<img align=center src="about.png" alt="about.png" />
 </div>
 
 
-![About](about.svg)
+<!-- ![About](about.png) -->
 
 # Install
 
