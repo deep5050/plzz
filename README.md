@@ -1,11 +1,11 @@
  <div align=center>
 <h1 align=center> PLZZ ("please")</h1>
 
-<img align=center src="logo.jpg" alt="logo">
+<img align=center src="https://user-images.githubusercontent.com/27947066/218241735-27fdbb5e-4d69-470f-b1b2-f3b66698cca2.jpg" alt="logo" height=150px />
 
 <p align=center> A python CLI to automate daily tasks of both common and advanced users :) </p>
 
-<img align=center src="about.png" alt="about.png" />
+<img align=center src="https://user-images.githubusercontent.com/27947066/218241672-68791da3-3d08-44f3-a962-d3d11bd2c302.png" alt="about" />
 </div>
 
 
