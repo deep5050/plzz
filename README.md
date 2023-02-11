@@ -40,6 +40,8 @@ Run the app with command **`plzz`**
 
 # Supported operations
 
+
+
 ```
 FILE OPERATIONS
 create-random-text-files : Creates a specified number of random text files with random text under a given directory.
@@ -69,11 +71,17 @@ upload-to-gist : Upload a file or all files under a directory to Github Gist.
 add-license : Create a license file of desired type.
 
 ```
+# Contribution
+
+See [GUIDE](GUIDE.md) for contribution guidelines.
 
 # Changes
 
 See the [CHANGELOG](CHANGELOG) file for more details.
 
+# License
+
+This project is under MIT license. To know more see the [LICENSE](LICENSE) file.
 
 # Support
 
