@@ -1,20 +1,23 @@
 #!/usr/bin/env python
 
 import sys
-import os
 import fire
-import json
+
 
 # install module paths
 sys.path.append("./plzz/helper_functions")
 sys.path.append("./plzz/commands/file_operations")
 sys.path.append("./plzz/commands/folder_organizations")
 
-from plzz.helper_functions.app import (__get_version, __print_version, __print_about, __check_upstream_version)
+# import app information
+from plzz.helper_functions.app import (
+    __print_version,
+    __print_about,
+    __check_upstream_version,
+)
 
 # import helper functions
 from plzz.helper_functions.helper_functions import (
-    colors,
     __list_all_commands,
     __search_command_by_keyword,
     __populate_development_data,
@@ -45,8 +48,6 @@ from plzz.commands.folder_organizations.delete_empty_files import (
     delete_empty_text_files,
 )
 from plzz.commands.folder_organizations.replace_word import replace_words_smartly
-
-# from plzz.commands.folder_organizations.organize_audio_by_bits import move_audio_by_bitrate
 
 
 # utilities
