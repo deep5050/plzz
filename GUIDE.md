@@ -13,3 +13,17 @@
 
 For build procedure see the `commands.sh` or `build.md` file.
 For further information use the discussion.
+
+-----------------------------------------------------------------------------
+
+## This is a guideline for contributors.
+2. Import `colors` and necessary `helper_functions`.
+3. Develop each operation in a separate file.
+4. Maintain color-coding when printing messages.
+5. Export your functions to the main function and register it under `fire()`.
+6. If your code depends on external modules, please mention it in the pull request (PR) and add it to the `requirements.txt` file.
+7. Use `plzz --develop` to build the command and function database. This step is crucial for it to appear in the list. Run the command only from the root directory.
+8. Disable the `--develop` command under `fire()` when pushing the code (comment it out).
+9. If possible, utilize the `__pathname_checker` function from `helper_function`.
+10. Write a docstring for the actual function, that will be exported to the fire module. This is mandatory as it will serve as your command description.
+11. For the build procedure, refer to the `commands.sh` or build.md file. For further information, utilize the discussion.
